@@ -1,0 +1,29 @@
+CHIP signextend {
+    IN a;
+    OUT out[16];
+
+    PARTS:
+   // Put you code here:
+   Not(in=a, out=abar);
+   And(a=a, b=abar, out=zero);
+   And(a=zero, b=zero, out=out[15]);
+   And(a=zero, b=zero, out=out[1]);
+   And(a=zero, b=zero, out=out[2]);
+   And(a=zero, b=zero, out=out[3]);
+   And(a=zero, b=zero, out=out[4]);
+   And(a=zero, b=zero, out=out[5]);
+   And(a=zero, b=zero, out=out[6]);
+   And(a=zero, b=zero, out=out[7]);
+   And(a=zero, b=zero, out=out[8]);
+   And(a=zero, b=zero, out=out[9]);
+   And(a=zero, b=zero, out=out[10]);
+   And(a=zero, b=zero, out=out[11]);
+   And(a=zero, b=zero, out=out[12]);
+   And(a=zero, b=zero, out=out[13]);
+   And(a=zero, b=zero, out=out[14]);
+   Or(a=a, b=zero, out=out[0]);
+   
+   
+   
+   
+}
